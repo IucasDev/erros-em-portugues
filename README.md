@@ -1,5 +1,7 @@
 # Erros em Português
 
+https://github.com/user-attachments/assets/7105dbf9-5228-43b6-bb18-141608c16e3e
+
 Traduz os erros e avisos que aparecem no VS Code para português — direto
 num painel próprio na barra lateral chamado **Problemas (PT-BR)**.
 
