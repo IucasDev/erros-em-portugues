@@ -1,0 +1,75 @@
+{
+  "name": "erros-em-portugues",
+  "displayName": "Erros em Português",
+  "description": "Mostra os erros e avisos do VS Code (Problems) traduzidos para o português, em um painel próprio na barra lateral.",
+  "version": "0.0.2",
+  "publisher": "LucasMartins",
+  "author": {
+    "name": "LucasMartins"
+  },
+  "icon": "resources/icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasDev/erros-em-portugues"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "erros-pt-br",
+          "title": "Erros PT-BR",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "erros-pt-br": [
+        {
+          "id": "erros-pt-br.problemsView",
+          "name": "Problemas (PT-BR)"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "erros-pt-br.refresh",
+        "title": "Atualizar",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "erros-pt-br.goToProblem",
+        "title": "Ir para o problema"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "erros-pt-br.refresh",
+          "when": "view == erros-pt-br.problemsView",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
