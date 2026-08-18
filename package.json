@@ -2,7 +2,7 @@
   "name": "erros-em-portugues",
   "displayName": "Erros em Português",
   "description": "Mostra os erros e avisos do VS Code (Problems) traduzidos para o português, em um painel próprio na barra lateral.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "LucasMartins",
   "author": {
     "name": "LucasMartins"
@@ -18,6 +18,19 @@
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "português",
+    "portuguese",
+    "tradução",
+    "translation",
+    "erros",
+    "errors",
+    "eslint",
+    "python",
+    "typescript",
+    "i18n",
+    "pt-br"
   ],
   "activationEvents": [
     "onStartupFinished"
